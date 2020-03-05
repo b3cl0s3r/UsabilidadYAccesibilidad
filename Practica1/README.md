@@ -154,7 +154,7 @@ Todo el javascript que hay en la página es el código de Bootstrap y Jquery.
 .footer {
     padding-top: 19px;
     color: #777;
-    /*border-top: 1px solid #e5e5e5;*/
+    border-top: 1px solid #e5e5e5;
 }
 ```
 
