@@ -1,0 +1,98 @@
+html {
+    width: 770px;
+    font-family: "Arial";
+    font-size: 1.5em;
+    color: black;
+    
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+body {
+	background-color: #FFY8AF;
+    margin: 0;
+    padding: 0;
+}
+
+.zona_barra_navegacion{ 
+	border-style: solid;
+    font-weight: bold; 
+    width: 550px;
+    height: 100px;
+    text-align: center;
+    float: left;
+    background-image: url("img/cabecera.jpg");
+    background-color: grey;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.zona_barra_navegacion > nav {
+    float: left;
+	text-align: center;
+}
+
+.zona_lateral {
+    background-color: #08f8c4;
+	border-style: solid;
+    width: 180px; 
+    float: left;
+} 
+
+
+.zona_texto_principal {
+	width: 400px;
+	height: 685px;
+	border-style: solid;
+	padding-left: 200px;
+	margin-left: 10px;
+}
+
+.zona_enlaces {
+	background-color: #03f137;
+    width: 150px;   /*Tecnicamente son 200px pero queda un hueco*/
+	height: px;
+    float: right;  
+    text-align: left;
+	border-style: solid;
+	padding-left: 0px;
+	display: block;
+}
+
+.pie_pagina { 
+	margin-left: 50px;
+    background-color: #cccccc; 
+}
+
+.pie_pagina > p {
+	text-align: left;
+}
+
+table{
+    width: 330px;
+    display: block;
+    overflow-x: auto;
+}
+
+table a {
+    color: green;
+}
+
+a {
+	color: blue;
+}
+
+a:visited {
+	color: blue;
+}
+
+a:hover {
+	color: red;
+}
+
+p {
+  padding: 0.5em;
+}
