@@ -38,10 +38,18 @@ body {
 .zona_lateral {
     background-color: #08f8c4;
 	border-style: solid;
-    width: 180px; 
+    width: 200px; 
     float: left;
 } 
 
+.zona_enlaces {
+	background-color: #03f137;
+    width: 130px;   /*Tecnicamente son 200px pero queda un hueco*/
+    float: left;  
+    text-align: left;
+	border-style: solid;
+	display: block;
+}
 
 .zona_texto_principal {
 	width: 400px;
@@ -51,16 +59,7 @@ body {
 	margin-left: 10px;
 }
 
-.zona_enlaces {
-	background-color: #03f137;
-    width: 150px;   /*Tecnicamente son 200px pero queda un hueco*/
-	height: px;
-    float: right;  
-    text-align: left;
-	border-style: solid;
-	padding-left: 0px;
-	display: block;
-}
+
 
 .pie_pagina { 
 	margin-left: 50px;
