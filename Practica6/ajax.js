@@ -1,6 +1,6 @@
-$('#buttom').click(function getDatos() {
+$('#buttom').click(() => {
   let inputValue = $('#inputValue').val();
-  console.log(inputValue);
+
   $.ajax({
     url: `https://jsonplaceholder.typicode.com/comments?postId=${inputValue}`,
     type: 'GET',
@@ -21,8 +21,6 @@ $('#buttom').click(function getDatos() {
       });
     },
 
-    error: function () {
-      console.log('ERROR');
-    },
+    error: () => { console.log('ERROR'); },
   });
 });
