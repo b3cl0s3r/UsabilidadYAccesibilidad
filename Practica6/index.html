@@ -1,24 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <script defer src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script defer src="./ajax.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Introducción a Ajax</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Practica 6</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-</head>
+  <body>
+    <h1>Introducción a Ajax</h1>
+    <h2>Introduce un ID:</h2>
+    <input type="text" id="inputValue" required />
+    <button id="buttom">Enviar</button>
 
-<body>
-    <div class="container">
-        <div class="section">
-            <button class="btn blue" id="boton">Haz click aqui</button>
-        </div>
-        <div class="section">
-            <p id="resultado"></p>
-        </div>
-    </div>
-    <script src="java.js"></script>
-</body>
-
+    <div id="resultado"></div>
+  </body>
 </html>
