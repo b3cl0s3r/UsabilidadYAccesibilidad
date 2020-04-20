@@ -24,8 +24,8 @@ Tal y como está configurado, todo se guarda en "/usuario" y, a continuación, s
 
 con un ID aleatorio, unas rutas tal que así:
 
-/usuario/zjJDmnalpPOIUdnzasj/{}
+/usuario/zjJDmqAUdP2j/{}
 
-![Antes](./antes.jpg "Antes")
+![Antes](./img/antes.jpg "Antes")
 
-![Despues](./despues.jpg "Despues")
+![Despues](./img/despues.jpg "Despues")
