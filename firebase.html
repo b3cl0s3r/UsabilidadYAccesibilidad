@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <script defer src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
+    <script defer src="./firebase.js"></script>
+
+    <title>Introducción a Firebase</title>
+  </head>
+
+  <body>
+    <h1>Introducción a Firebase</h1>
+    <h2>Introducir usuario</h2>
+    <div id="sendData">
+      <input id="name" required placeholder="Nombre"></input>
+      <input id="surname" required placeholder="Apellidos"></input>
+      <input id="username" required placeholder="Username"></input>
+      <button id="enviarDatos" type="submit">Enviar</button>
+    </div>
+    <h2>Datos BBDD</h2>
+    <div id="bdinfo"></div>
+    <h2>Eliminar usuario</h2>
+    <div id="removeData">
+      <input id="entryId" required placeholder="Identificador"></input>
+      <button id="borrarDatos" type="submit">Enviar</button>
+    </div>
+  </body>
+</html>
