@@ -1,0 +1,22 @@
+{
+  "name": "usabilidadyaccesibilidad",
+  "version": "1.0.0",
+  "description": "## Integrantes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/b3cl0s3r/UsabilidadYAccesibilidad.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/b3cl0s3r/UsabilidadYAccesibilidad/issues"
+  },
+  "homepage": "https://github.com/b3cl0s3r/UsabilidadYAccesibilidad#readme",
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}
