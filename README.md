@@ -8,3 +8,18 @@ Noah Sanchez Geurts - alu0101134956@ull.edu.es
 
 Adrián Melián Fernandez - alu0100974652@ull.edu.es
 
+## Links a despliegues de practicas
+
+### Practica 5: Introduccion a Javascript
+
+https://b3cl0s3r.github.io/UsabilidadYAccesibilidad/html/index.html
+
+### Practica 6: Introduccion a AJAX
+
+https://b3cl0s3r.github.io/UsabilidadYAccesibilidad/ajax.html
+
+### Practica 7: Introducción a Firebase
+
+https://b3cl0s3r.github.io/UsabilidadYAccesibilidad/firebase.html
+
+
