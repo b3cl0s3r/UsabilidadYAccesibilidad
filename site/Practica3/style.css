@@ -1,0 +1,146 @@
+
+html {
+    width: 770px;
+    font-family: "Arial";
+    font-size: 1.5em;
+    color: black;
+
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#cabecera{ 
+    font-weight: bold; 
+    width: 570px;
+    height: 100px;
+    text-align: center;
+    float: right;
+    display: block;
+    background-image: url("img/cabecera.jpg");
+    background-color: grey;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cabecera > nav {
+    float: left;
+}
+
+#lateral{
+    width: 200px; 
+    height: 1000px;
+    float: left;
+    background-color: #08f8c4;
+    position: relative;
+    bottom: 50px;
+} 
+
+#otrolado{ 
+    width: 238px;  
+    float: right;  
+    text-align: left;
+} 
+
+#principal{ 
+
+    width: 330px; 
+    text-align: center;
+} 
+
+#principal img{
+    width: 250px;
+    margin: auto;
+    display: block;
+    align-content: center;
+}
+
+.seccion {
+    display: inline-block;
+    
+}
+
+footer { 
+    background-color: #cccccc; 
+    width: 770px;
+    text-align: center; 
+    clear: both; 
+    position: relative;
+    bottom: 50px;
+}
+
+a {
+    color: blue;
+}
+
+nav a:hover {
+    color: red;
+}
+
+nav a:visited {
+    color: blue;
+}
+
+nav a:visited:hover {
+    color: red;
+}
+
+table{
+    width: 330px;
+    display: block;
+    overflow-x: auto;
+}
+
+table a {
+    color: green;
+}
+
+p {
+    padding-top: 0.5em;  
+}
+
+nav > a {
+    background-color: white;
+}
+nav > a:hover {
+    background-color: #FFE65A;
+}
+
+.pagina-principal{
+    display: table;
+    width:100%;
+}
+
+header h1 {
+    text-align: center;
+}
+
+ol {
+    text-align: left;
+}
+
+#lateral li{
+    padding: 0.3em;
+    margin-bottom: 0.7em;
+}
+
+#lateral p {
+    padding: 0.25em;
+    text-align: center;
+}
+
+#otrolado a {
+    line-height: 2em;
+}
+
+#otrolado{
+    height: 900px;
+    text-align:center;
+    background-color: #03f137;
+}
