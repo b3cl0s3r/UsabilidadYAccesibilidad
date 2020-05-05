@@ -1,0 +1,61 @@
+.tabs .tab a:hover {
+    background-color: #546e7a;
+    color:#000;
+} /*Text color on hover*/
+
+.tabs .tab a:active {
+    background-color: #37474f;
+    color:#000;
+}
+
+.tabs .indicator {
+    background-color:#000;
+} /*Color of underline*/
+
+.tabs .tab a:focus {
+    background-color: #37474f;
+}
+
+.tabs .tab a:visited {
+    background-color: #37474f;
+}
+
+.brand-logo {
+    font-family: 'Anton', sans-serif;
+}
+
+h4 {
+    font-family: 'Anton', sans-serif;
+}
+
+.upIcon {
+    color: green;
+}
+
+.dolarIcon {
+    color: yellow;
+}
+
+html {
+    font-size: 18px;
+}
+
+.laura {
+    width: 175px; 
+    height: 175px;
+    border-radius: 50%;
+    background-image: url("img/Laura.jpg");
+    margin:auto;
+}
+
+.marcos {
+    width: 175px; 
+    height: 175px;
+    border-radius: 50%;
+    background-image: url("img/Marcos.jpg");
+    margin: auto;
+}
+
+.laura-section {
+    background-color: red;
+}
