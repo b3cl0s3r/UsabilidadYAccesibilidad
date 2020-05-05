@@ -16,3 +16,11 @@ $(document).ready(function(){
       $('.carousel').carousel('next');
       setTimeout(autoplay, 4500);
   }
+
+// COLAPSIDE
+
+<script>
+  $(document).ready(function () {
+      $('.collapsible').collapsible();
+  });
+</script>
