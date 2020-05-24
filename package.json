@@ -17,6 +17,11 @@
   },
   "homepage": "https://github.com/b3cl0s3r/UsabilidadYAccesibilidad#readme",
   "devDependencies": {
+    "cssnano": "^4.1.10",
     "gh-pages": "^2.2.0"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "materialize": "^1.0.0"
   }
 }

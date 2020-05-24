@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles.css"],"names":[],"mappings":"AAKA,sBACI,WAAY,CACZ,aACJ","file":"styles.b6008f5b.css","sourceRoot":"..","sourcesContent":["#btn-next {\n    margin: auto;\n    display: block;\n}\n\n#btn-before {\n    margin: auto;\n    display: block;\n}\n\n"]}
