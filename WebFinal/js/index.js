@@ -8,7 +8,7 @@ function desconectar() {
     window.localStorage.removeItem('userlog');
   }
   console.log("desconectarse")
-  window.location.assign('/');
+  window.location.assign('/UsabilidadYAccesibilidad/WebFinal/');
 }
 
 function createMenuEl(obj) {
