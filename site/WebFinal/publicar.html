@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="Language" content="Spanish" />
+    <meta name="”Distribution”" content="Global" />
+    <title>CodeTime</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <meta
+      name="description"
+      content="CodeTime es el banco de tiempo pensado para aquellos usuarios que quieran aprender y compartir sus conocimientos en informática."
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"
+    ></script>
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"
+    ></script>
+    <link media="screen" href="./styles.css" type="text/css" rel="stylesheet" />
+    <script defer src="./js/publicar.js"></script>
+    <script defer src="js/index.js"></script>
+  </head>
+
+  <body>
+    <div>
+      <nav class="nav-extended">
+        <div class="nav-wrapper blue-grey darken-4">
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul class="left hide-on-med-and-down">
+            <li>
+              <a name="contenido" href="#contenido" id="goto"
+                >Ir al contenido</a
+              >
+            </li>
+          </ul>
+          <a href="#!" class="brand-logo center" tabindex="0">CodeTime</a>
+
+          <ul class="right hide-on-med-and-down"></ul>
+        </div>
+      </nav>
+
+      <ul class="sidenav hide-on-large-only" id="mobile-demo"></ul>
+
+      <div class="row center-align">
+        <div class="col l6 offset-l3 m8 offset-m2">
+          <div class="divider"></div>
+          <div class="section size18">
+            <div id="contenido" tabindex="0">
+              <h4 tabindex="0">Publicar oferta</h4>
+              <input
+                tabindex="0"
+                title="título"
+                placeholder="Título"
+                id="posttitle"
+                type="text"
+                class="validate titulopost"
+                minlength="5"
+                maxlength="80"
+                required="true"
+              />
+              <p
+                class="helper-text"
+                data-error="Campo obligatorio. El título debe tener entre 5 y 80."
+              ></p>
+              <input
+                tabindex="0"
+                title="precio"
+                placeholder="Precio numérico"
+                id="precio"
+                type="number"
+                class="validate"
+                min="1"
+                required="true"
+              />
+              <p
+                class="helper-text"
+                data-error="Campo obligatorio. El número mínimo debe ser 1"
+              ></p>
+              <textarea
+                class="contenidopost"
+                placeholder="Contenido"
+                tabindex="0"
+                required="true"
+              ></textarea>
+              <div id="registrocorrecto"></div>
+              <button class="login-buttom">Enviar</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="page-footer blue-grey darken-4">
+        <div class="container">
+          <div class="right">
+            <label for="volver" class="hidescreen">Volver</label>
+            <a
+              name="contenido"
+              href="#contenido"
+              tabindex="0"
+              id="volver"
+              name="volver"
+            >
+              <i class="large material-icons" arial-hidden="true"
+                >arrow_upward</i
+              >
+            </a>
+          </div>
+          <div class="row">
+            <div class="col l6 s12 m8" tabindex="0">
+              <h5 class="white-text">Confían en nosotros:</h5>
+              <br />
+              <img
+                class="col s4 l4 m4"
+                alt="IBM"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/1200px-IBM_logo.svg.png"
+              />
+              <img
+                class="col s4 l4 m4"
+                alt="Google"
+                src="https://www.google.es/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png"
+              />
+              <img
+                class="col s4 l4 m4"
+                alt="Iberdrola"
+                src="https://1000marcas.net/wp-content/uploads/2019/11/Logo-Iberdrola.png"
+              />
+              <br /><br /><br />
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright grey darken-4">
+          <div class="container">
+            © 2020 CodeTime. Todos los derechos reservados.
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
