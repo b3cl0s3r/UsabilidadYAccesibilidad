@@ -99,6 +99,13 @@ db.collection('ofertas')
       }
 
       let domel = document.querySelector('#page-' + (i + 1));
-      domel.addEventListener('click', changePage);
+      domel.addEventListener('keypress', function (e) {
+        var key = e.which || e.keyCode || 0;
+
+        if (key === 13) {
+          changePage(e);
+        }
+    
+      });
     }
   });
