@@ -28,7 +28,7 @@ function createMenuEl(obj) {
   child.tabIndex = '0';
   child.appendChild(text);
   el.appendChild(child);
-  console.log()
+  console.log(window.location.pathname, url_base+obj.page)
   if ( window.location.pathname == url_base+obj.page ) {
     el.className = "active"
   }
