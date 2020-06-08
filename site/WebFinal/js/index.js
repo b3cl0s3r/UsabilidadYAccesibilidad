@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', function () {
   M.Sidenav.init(elems, {});
 });
 
+var url_base = "/UsabilidadYAccesibilidad/WebFinal/"
+
 function desconectar() {
   if (window.localStorage.getItem('userlog')) {
     window.localStorage.removeItem('userlog');
@@ -27,7 +29,7 @@ function createMenuEl(obj) {
   child.appendChild(text);
   el.appendChild(child);
   console.log()
-  if ( window.location.pathname == "/"+obj.page ) {
+  if ( window.location.pathname == url_base+obj.page ) {
     el.className = "active"
   }
 
