@@ -15,7 +15,6 @@ function createMenuEl(obj) {
   let el = document.createElement('li');
   let child = document.createElement('a');
   let text = document.createTextNode(obj.title);
-  child.title = obj.title;
 
   if (obj.id) {
     child.className = obj.id;
