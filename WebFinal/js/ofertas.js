@@ -91,7 +91,6 @@ db.collection('ofertas')
       el.href = '#page-' + (i + 1);
       el.id = 'page-'+(i + 1);
       el.innerText = i + 1;
-      el.addEventListener('click', changePage);
 
       pagina.appendChild(el);
       if (i != pages - 1) {
@@ -99,6 +98,7 @@ db.collection('ofertas')
       }
 
       let domel = document.querySelector('#page-' + (i + 1));
+      domel.addEventListener('click', changePage);
       domel.addEventListener('keydown', function (e) {
         var key = e.which || e.keyCode || 0;
 
