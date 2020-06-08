@@ -30,7 +30,7 @@ function conectarse() {
           if (data.name == name && data.pass == pass) {
             window.localStorage.setItem('userlog', data.email);
             window.localStorage.setItem('username', data.name);
-            window.location.assign("/");
+            window.location.assign("/UsabilidadYAccesibilidad/WebFinal/");
           }
         });
       })
