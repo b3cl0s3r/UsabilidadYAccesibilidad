@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   var elems = document.querySelectorAll('.sidenav');
-  var instances = M.Sidenav.init(elems, {});
+  M.Sidenav.init(elems, {});
 });
 
 function desconectar() {
@@ -26,6 +26,10 @@ function createMenuEl(obj) {
   child.tabIndex = '0';
   child.appendChild(text);
   el.appendChild(child);
+  console.log()
+  if ( window.location.pathname == "/"+obj.page ) {
+    el.className = "active"
+  }
 
   let desktop = document.querySelectorAll('.hide-on-med-and-down');
   let mobile = document.querySelector('#mobile-demo');
