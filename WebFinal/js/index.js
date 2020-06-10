@@ -1,25 +1,26 @@
 document.addEventListener('DOMContentLoaded', function () {
   var elems = document.querySelectorAll('.sidenav');
-  var instances = M.Sidenav.init(elems, {});
+  M.Sidenav.init(elems, {});
 });
+
+var url_base = '/UsabilidadYAccesibilidad/WebFinal/';
 
 function desconectar() {
   if (window.localStorage.getItem('userlog')) {
     window.localStorage.removeItem('userlog');
   }
-  console.log("desconectarse")
-  window.location.assign('/');
+  console.log('desconectarse');
+  window.location.assign('/UsabilidadYAccesibilidad/WebFinal/');
 }
 
 function createMenuEl(obj) {
   let el = document.createElement('li');
   let child = document.createElement('a');
   let text = document.createTextNode(obj.title);
-  child.title = obj.title;
 
   if (obj.id) {
     child.className = obj.id;
-    child.href = "#"
+    child.href = '#';
   } else {
     child.href = obj.page;
   }
@@ -27,6 +28,10 @@ function createMenuEl(obj) {
   child.tabIndex = '0';
   child.appendChild(text);
   el.appendChild(child);
+
+  if (window.location.pathname == url_base + obj.page) {
+    el.className = 'active';
+  }
 
   let desktop = document.querySelectorAll('.hide-on-med-and-down');
   let mobile = document.querySelector('#mobile-demo');
@@ -52,6 +57,10 @@ let menu = [
     page: 'ofertas.html',
   },
   {
+    title: 'Contacto',
+    page: 'contacto.html',
+  },
+  {
     title: 'Únete',
     page: 'unete.html',
   },
@@ -69,6 +78,10 @@ let menuLogged = [
   {
     title: 'Publicar',
     page: 'publicar.html',
+  },
+  {
+    title: 'Contacto',
+    page: 'contacto.html',
   },
   {
     title: 'Desconectarse',

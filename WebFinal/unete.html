@@ -50,7 +50,7 @@
   </head>
 
   <body>
-    <div>
+    <header>
       <nav class="nav-extended">
         <div class="nav-wrapper blue-grey darken-4">
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"
@@ -63,181 +63,180 @@
               >
             </li>
           </ul>
-          <a href="#!" class="brand-logo center" tabindex="0">CodeTime</a>
+          <a href="#" class="brand-logo center" tabindex="0">CodeTime</a>
 
           <ul class="right hide-on-med-and-down"></ul>
         </div>
       </nav>
 
       <ul class="sidenav hide-on-large-only" id="mobile-demo"></ul>
+    </header>
+    <div class="row center-align">
+      <div class="col l6 offset-l3 m8 offset-m2">
+        <div class="divider"></div>
+        <div class="section">
+          <div id="contenido" tabindex="0">
+            <h4 tabindex="0">Conéctate</h4>
+            <p>Introduce tus datos para iniciar sesión aquí.</p>
+            <br /><br />
 
-      <div class="row center-align">
-        <div class="col l6 offset-l3 m8 offset-m2">
-          <div class="divider"></div>
-          <div class="section">
-            <div id="contenido" tabindex="0">
-              <h4 tabindex="0">Conéctate</h4>
-              <br /><br />
-
-              <form>
-                <div class="row">
-                  <input
-                    type="text"
-                    id="userlogin"
-                    placeholder="Nombre de usuario"
-                    title="Nombre de usuario"
-                    maxlength="30"
-                    minlength="4"
-                    class="validate"
-                    autocomplete="username"
-                    required="true"
-                  />
-                  <p
-                    id="loginCheck"
-                    class="helper-text"
-                    data-error="El nombre de usuario debe tener longitud mínima de 4."
-                  ></p>
-                </div>
-                <div class="row">
-                  <input
-                    required="true"
-                    type="password"
-                    id="passlogin"
-                    placeholder="Contraseña"
-                    title="Contraseña"
-                    maxlength="30"
-                    minlength="6"
-                    class="validate"
-                    autocomplete="current-password"
-                  />
-                  <p
-                    id="loginCheck"
-                    class="helper-text"
-                    data-error="La contraseña debe tener longitud mínima de 6."
-                  ></p>
-                  <br /><br />
-                </div>
-                <div id="errorloginmsg"></div>
-                <button type="button" class="login-buttom" id="conectarse">
-                  Conectarse
-                </button>
-              </form>
-              <br /><br /><br />
-              <h4 tabindex="0">¿No estás registrado?</h4>
-              <br /><br />
+            <form>
               <div class="row">
                 <input
                   type="text"
-                  id="userregister"
-                  class="validate"
+                  id="userlogin"
                   placeholder="Nombre de usuario"
                   title="Nombre de usuario"
                   maxlength="30"
                   minlength="4"
+                  class="validate"
                   autocomplete="username"
+                  required
                 />
                 <p
-                  id="userChecker"
+                  id="loginCheck"
                   class="helper-text"
                   data-error="El nombre de usuario debe tener longitud mínima de 4."
                 ></p>
               </div>
               <div class="row">
                 <input
-                  type="email"
-                  id="emailregister"
-                  class="validate"
-                  placeholder="Correo electrónico"
-                  title="Correo electrónico"
-                />
-                <p
-                  id="emailChecker"
-                  class="helper-text"
-                  data-error="El email debe contener @ y una terminación. example@email.com"
-                ></p>
-              </div>
-              <div class="row">
-                <input
+                  required
                   type="password"
-                  id="passregister"
+                  id="passlogin"
                   placeholder="Contraseña"
                   title="Contraseña"
                   maxlength="30"
                   minlength="6"
                   class="validate"
-                  autocomplete="new-password"
+                  autocomplete="current-password"
                 />
                 <p
-                  id="passChecker"
+                  id="loginCheck"
                   class="helper-text"
                   data-error="La contraseña debe tener longitud mínima de 6."
                 ></p>
+                <br /><br />
               </div>
-              <div class="row">
-                <input
-                  type="tel"
-                  id="telregister"
-                  title="Teléfono"
-                  placeholder="Teléfono"
-                  minlenght="8"
-                />
-              </div>
-              <div id="errormsg"></div>
-              <div id="registrocorrecto"></div>
-              <br /><br />
-              <button type="button" class="login-buttom" id="registro">
-                Registrarse
+              <div id="errorloginmsg"></div>
+              <button type="button" class="login-buttom" id="conectarse">
+                Conectarse
               </button>
+            </form>
+            <br /><br /><br />
+            <h4 tabindex="0">¿No estás registrado?</h4>
+            <p>Puedes registrarte en el siguiente formulario</p>
+            <br /><br />
+            <div class="row">
+              <input
+                type="text"
+                id="userregister"
+                class="validate"
+                placeholder="Nombre de usuario"
+                title="Nombre de usuario"
+                maxlength="30"
+                minlength="4"
+                autocomplete="username"
+              />
+              <p
+                id="userChecker"
+                class="helper-text"
+                data-error="El nombre de usuario debe tener longitud mínima de 4."
+              ></p>
             </div>
+            <div class="row">
+              <input
+                type="email"
+                id="emailregister"
+                class="validate"
+                placeholder="Correo electrónico"
+                title="Correo electrónico"
+              />
+              <p
+                id="emailChecker"
+                class="helper-text"
+                data-error="El email debe contener @ y una terminación. example@email.com"
+              ></p>
+            </div>
+            <div class="row">
+              <input
+                type="password"
+                id="passregister"
+                placeholder="Contraseña"
+                title="Contraseña"
+                maxlength="30"
+                minlength="6"
+                class="validate"
+                autocomplete="new-password"
+              />
+              <p
+                id="passChecker"
+                class="helper-text"
+                data-error="La contraseña debe tener longitud mínima de 6."
+              ></p>
+            </div>
+            <div class="row">
+              <input
+                type="tel"
+                id="telregister"
+                title="Teléfono"
+                placeholder="Teléfono"
+                minlenght="8"
+              />
+            </div>
+            <div id="errormsg"></div>
+            <div id="registrocorrecto"></div>
+            <br /><br />
+            <button type="button" class="login-buttom" id="registro">
+              Registrarse
+            </button>
           </div>
         </div>
       </div>
-
-      <footer class="page-footer blue-grey darken-4">
-        <div class="container">
-          <div class="right">
-            <label for="volver" class="hidescreen">Volver</label>
-            <a
-              name="contenido"
-              href="#contenido"
-              tabindex="0"
-              id="volver"
-              name="volver"
-            >
-              <i class="large material-icons" arial-hidden="true"
-                >arrow_upward</i
-              >
-            </a>
-          </div>
-          <div class="row">
-            <div class="col l6 s12 m8" tabindex="0">
-              <h5 class="white-text">Confían en nosotros:</h5>
-              <br />
-              <img
-                class="col s4 l4 m4"
-                alt="IBM"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/1200px-IBM_logo.svg.png"
-              />
-              <img
-                class="col s4 l4 m4"
-                alt="Google"
-                src="https://www.google.es/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png"
-              />
-              <img
-                class="col s4 l4 m4"
-                alt="Iberdrola"
-                src="https://1000marcas.net/wp-content/uploads/2019/11/Logo-Iberdrola.png"
-              />
-              <br /><br /><br />
-            </div>
-          </div>
-        </div>
-        <div class="footer-copyright grey darken-4">
-          <div class="container">
-            © 2020 CodeTime. Todos los derechos reservados.
-          </div>
-        </div>
-      </footer>
     </div>
+
+    <footer class="page-footer blue-grey darken-4">
+      <div class="container">
+        <div class="right">
+          <label for="volver" class="hidescreen">Volver</label>
+          <a
+            name="contenido"
+            href="#contenido"
+            tabindex="0"
+            id="volver"
+            name="volver"
+          >
+            <i class="large material-icons" arial-hidden="true">arrow_upward</i>
+          </a>
+        </div>
+        <div class="row">
+          <div class="col l6 s12 m8" tabindex="0">
+            <h5 class="white-text">Confían en nosotros:</h5>
+            <br />
+            <img
+              class="col s4 l4 m4"
+              alt="IBM"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/1200px-IBM_logo.svg.png"
+            />
+            <img
+              class="col s4 l4 m4"
+              alt="Google"
+              src="https://www.google.es/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png"
+            />
+            <img
+              class="col s4 l4 m4"
+              alt="Iberdrola"
+              src="https://1000marcas.net/wp-content/uploads/2019/11/Logo-Iberdrola.png"
+            />
+            <br /><br /><br />
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright grey darken-4">
+        <div class="container">
+          © 2020 CodeTime. Todos los derechos reservados.
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

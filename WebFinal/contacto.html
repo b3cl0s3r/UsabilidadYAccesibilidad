@@ -24,15 +24,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
 
-    <script
-      defer
-      src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"
-    ></script>
-    <script
-      defer
-      src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"
-    ></script>
-
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <meta
@@ -43,9 +34,16 @@
       href="https://fonts.googleapis.com/css?family=Anton&display=swap"
       rel="stylesheet"
     />
-
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"
+    ></script>
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"
+    ></script>
     <link media="screen" href="./styles.css" type="text/css" rel="stylesheet" />
-    <script defer src="./js/ofertas.js"></script>
+    <script defer src="./js/contacto.js"></script>
     <script defer src="js/index.js"></script>
   </head>
 
@@ -74,11 +72,45 @@
     <div class="row center-align">
       <div class="col l6 offset-l3 m8 offset-m2">
         <div class="divider"></div>
-        <div class="section">
+        <div class="section size18">
           <div id="contenido" tabindex="0">
-            <h4 tabindex="0">Ofertas: Página 1</h4>
-            <div id="all-ofertas"></div>
-            <div id="num-pagina"></div>
+            <h4 tabindex="0">Contactar</h4>
+            <p>¿Tienes alguna duda? ¡Puedes contactar con nuestro equipo en el siguiente formulario!</p>
+            <input
+              tabindex="0"
+              title="título"
+              placeholder="Título"
+              id="posttitle"
+              type="text"
+              class="validate titulopost"
+              minlength="5"
+              maxlength="80"
+              required
+            />
+            <p
+              class="helper-text"
+              data-error="Campo obligatorio. El título debe tener entre 5 y 80."
+            ></p>
+            <input
+              type="email"
+              id="emailfield"
+              class="validate"
+              placeholder="Correo electrónico"
+              title="Correo electrónico"
+            />
+            <p
+              id="emailChecker"
+              class="helper-text"
+              data-error="El email debe contener @ y una terminación. example@email.com"
+            ></p>
+            <textarea
+              class="contenidopost"
+              placeholder="Contenido"
+              tabindex="0"
+              required="true"
+            ></textarea>
+            <div id="registrocorrecto"></div>
+            <button class="login-buttom">Enviar</button>
           </div>
         </div>
       </div>
